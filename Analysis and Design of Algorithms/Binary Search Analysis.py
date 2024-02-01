@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-import time
+import numpy as np
 
 def binary_search(arr, target):
     low, high = 0, len(arr) - 1
@@ -32,16 +32,23 @@ def analyze_binary_search(arr_size):
 
 def plot_analysis(arr_sizes):
     average_steps_list = []
+    log_n_values = []
 
     for size in arr_sizes:
         average_steps = analyze_binary_search(size)
         average_steps_list.append(average_steps)
 
+        # Calculate log(n) for the given array size
+        log_n_value = np.log2(size)
+        log_n_values.append(log_n_value)
+
     # Plotting
-    plt.plot(arr_sizes, average_steps_list, marker='o')
-    plt.title('Binary Search Analysis')
+    plt.plot(arr_sizes, average_steps_list, marker='o', label='Binary Search')
+    plt.plot(arr_sizes, log_n_values, '--', label='log(n)', color='red')
+    plt.title('Binary Search Analysis with log(n)')
     plt.xlabel('Array Size')
     plt.ylabel('Average Steps')
+    plt.legend()
     plt.grid(True)
     plt.show()
 
