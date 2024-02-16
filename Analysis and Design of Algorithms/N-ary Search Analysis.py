@@ -1,6 +1,4 @@
-# N 
-# ary 
-# search
+# N ary search
 import random
 import time
 import csv
