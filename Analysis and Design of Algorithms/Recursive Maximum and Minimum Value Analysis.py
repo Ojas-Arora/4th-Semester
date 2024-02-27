@@ -1,4 +1,6 @@
-#Recursive Maximum and Minimum Value 
+#Recursive Maximum 
+# and 
+# Minimum Value
 import matplotlib.pyplot as plt
 import random
 def find_max_min_recursive(n, max_vals=None, min_vals=None):
