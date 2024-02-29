@@ -1,4 +1,4 @@
-#Recursive Maximum and 
+#Recursive Maximum  
 # Minimum Value
 import matplotlib.pyplot as plt
 import random
