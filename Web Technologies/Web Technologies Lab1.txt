@@ -1,0 +1,90 @@
+Tags in HTML:
+
+1.Document Structure:-
+<!DOCTYPE html>: Declares the document type and version of HTML.
+<html>: The root element of an HTML page.
+<head>: Contains meta-information about the HTML document.
+<title>: Sets the title of the HTML document.HTML.
+<body> : Declares the body of the HTML document.
+
+2.Text Formatting:
+
+<h1> to <h6>: Heading tags for different levels of headings.
+<p>: Paragraph tag.
+<b>: Bold text.
+<strong> - Important text.
+<mark> - Marked text.
+<small> - Smaller text.
+<del> - Deleted text.
+<ins> - Inserted text.
+<sub> - Subscript text.
+<sup> - Superscript text.
+<em>: Emphaiszed Text.  
+<i>: Italic text.
+<u>: Underlined text.
+<abbr>:	Defines an abbreviation or acronym
+<address>: Defines contact information for the author/owner of a document
+<bdo>: Defines the text direction
+<blockquote>: Defines a section that is quoted from another source
+<cite>: Defines the title of a work
+<q>: Defines a short inline quotation
+
+3.Lists:
+
+<ul>: Unordered list.
+<ol>: Ordered list.
+<li>: List item.
+<li>: Defines a list item
+<dl>: Defines a description list
+<dt>: Defines a term in a description list
+<dd>: Describes the term in a description list
+
+4.Links:
+
+<a>: Anchor tag for creating hyperlinks.
+<link>: Defines the relationship between a document and an external resource.
+
+5.Images:
+
+<img>: Embeds an image.
+<map>: Defines an image map
+<area>: Defines a clickable area inside an image map
+<picture>: Defines a container for multiple image resources
+
+6.Tables:
+
+<table>: Defines a table.
+<tr>: Defines a table row.
+<td>: Defines a table cell.
+<th>: Defines a header cell in a table
+<caption>: Defines a table caption
+<thead>: Groups the header content in a table
+<tbody>: Groups the body content in a table
+<tfoot>: Groups the footer content in a table
+
+7.Forms:
+
+<form>: Defines an HTML form.
+<input>: Defines an input field.
+<select>: Defines a dropdown list.
+<textarea>: Defines a multiline text input.
+
+8.Semantic Markup:
+
+<header>: Represents a header in a document or a section.
+<footer>: Represents a footer in a document or a section.
+<nav>: Represents a navigation bar.
+<section>: Represents a generic section of a document.
+<article>: Represents an independent piece of content.
+
+9.Miscellaneous:
+
+<div>: Generic container element used for layout and styling.
+<span>: Inline container used for styling or scripting.
+<br>: Line break.
+<hr>: Horizontal line.
+<pre>:  Defines Preformatted text. 
+<audio>: Defines sound content.
+<source>:  Defines multiple media resources for media elements, such as <video> and <audio>.
+<video>	Defines a video or movie.
+<track>	Defines text tracks in media players.
