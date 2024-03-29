@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Hotel Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./connect/styles.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header" id="navigation-menu">
+    <div class="container">
+      <nav>
+        <a href="#" class="logo"> <img src="./connect/assets/logo1.svg" alt=""> </a>
+          <ul class="nav-menu">
+          <li> <a href="#home" class="nav-link">HOME</a> </li>
+          <li> <a href="#about"class="nav-link">ABOUT</a> </li>
+          <li> <a href="#room" class="nav-link">ROOMS</a> </li>
+          <li> <a href="#restaurant" class="nav-link">RESTAURANT</a> </li>
+          <li> <a href="#gallary" class="nav-link">GALLERY</a> </li>
+          <li> <a href="#contact" class="nav-link">CONTACT</a> </li>
+        </ul>
+
+        <div class="hambuger">      
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const hambuger = document.querySelector('.hambuger');
+    const navMenu = document.querySelector('.nav-menu');
+      
+    hambuger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hambuger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll('.nav-link');
+    navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+      hambuger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+  </script>
+
+  <section class="home top" id="home">
+    <div class="head_container">
+        <div class="box">
+            <div class="text">
+                <h1>Oberoi Hotels, New Delhi</h1>
+                <p>What stirs the traveller in you? An idyllic beach on a faraway island? Shopping for rare treasures in an ancient city? A picnic in the Himalayas? A leisurely cruise on the Nile or a jungle adventure?</p>
+                <button onclick="window.location.href='https://www.oberoihotels.com/'">MORE INFO</button>
+                <div class="transparent-box">
+                    <h1>Oberoi Hotels, New Delhi</h1>
+                    <p>What stirs the traveller in you? An idyllic beach on a faraway island? Shopping for rare treasures in an ancient city? A picnic in the Himalayas? A leisurely cruise on the Nile or a jungle adventure?</p>
+                    <button onclick="window.location.href='https://www.oberoihotels.com/'">MORE INFO</button>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="./connect/assets/TOND-1920x819.webp" class="slide">
+        </div>
+        <div class="image_item">
+            <img src="./connect/assets/TOND-the-urban-escape-1920x819-35.webp" alt="" class="slide active" onclick="img('./connect/assets/TOND-the-urban-escape-1920x819-35.webp')">
+            <img src="./connect/assets/Delhi-Spot-Light-1920-x-562-new (1).webp" alt="" class="slide" onclick="img('./connect/assets/Delhi-Spot-Light-1920-x-562-new (1).webp')">
+            <img src="./connect/assets/Delhi-Spot-Light-1920-x-562-new.webp" alt="" class="slide" onclick="img('./connect/assets/Delhi-Spot-Light-1920-x-562-new.webp')">
+            <img src="./connect/assets/IMG_4469.webp" alt="" class="slide" onclick="img('./connect/assets/IMG_4469.webp')">
+        </div>
+    </div>
+</section>
+
+
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.image');
+      line.style.background = change;
+    }
+  </script>
+  <section class="book">
+    <div class="container flex">
+      <div class="input grid">
+        <div class="box">
+          <label>CHECK-IN:</label>
+          <input type="date" placeholder="Check-in-Date">
+        </div>
+        <div class="box">
+          <label>CHECK-OUT:</label>
+          <input type="date" placeholder="Check-out-Date">
+        </div>
+        <div class="box">
+          <label>ADULTS:</label> <br>
+          <input type="number" placeholder="0">
+        </div>
+        <div class="box">
+          <label>CHILDREN:</label> <br>
+          <input type="number" placeholder="0">
+        </div>
+      </div>
+      <div class="search">
+        <input type="submit" value="SEARCH">
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>  
+  <section class="about" id="about">
+    <div class="container flex">
+      <div class="left">
+        <div class="img">
+          <img src="./connect/assets/a1.jpg" alt="" class="image1">
+          <img src="./connect/assets/a2.jpg" alt="" class="image2">
+        </div>
+      </div>
+      <div class="right">
+        <div class="heading">
+          <h5>RAISING COMFOMRT TO THE HIGHEST LEVEL</h5>
+          <h2>Welcome to OBEROI HOTEL</h2>
+          <p>Allow us to enhance your experience with us. Even more.
+            Oberoi One is our distinctive guest recognition programme that guarantees a host of personalised benefits and privileges from your very first stay.     
+           <p> From member only rates on our website and savings when you dine with us, to flexible check-in and check-out timings and complimentary stays and upgrades. The more often you stay with us, the better the programme gets for you. </p>
+          
+          <button class="btn1" onclick="window.location.href='https://www.oberoihotels.com/oberoi-one/login/'" >READ MORE</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="wrapper top">
+    <div class="container">
+      <img src="./connect/assets/namaste.webp" alt="namaste" height="500px" width="550px">
+      <div class="text">
+        <h2>OUR AMMENTIES</h2>
+        <p>The Oberoi Group, founded in 1934, operates 32 hotels, Nile Cruisers. The Group has presence in seven countries under the luxury 'Oberoi' and five-star 'Trident' brand. The Group is also engaged in flight catering, airport restaurants, travel and tour services, car rentals and corporate air charters. </p>
+        <div class="content">
+          <div class="box flex">
+              <i class="fas fa-tree"></i> <!-- Font Awesome icon for a tree -->
+              <span>FOREST BATHING</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-star"></i>
+            <span>DINE UNDER THE STARS</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-spa"></i>
+            <span>SPA AND MASSAGE</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-drum"></i>
+            <span>A DANCE PARADISE</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-utensils"></i> <!-- Font Awesome icon for dining -->
+            <span>DINE ON THE DECK</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-cookie-bite"></i>
+            <span>CHOCOLATE MAKING</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-water"></i>
+            <span>DIVING AND SMORKING</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-om"></i> <!-- Font Awesome icon for a lotus (Om) -->
+            <span>PRACTICE YOGA SESSION</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="room top" id="room">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+          <h5>RAISING COMFORT TO THE HIGHEST LEVEL</h5>
+          <h2>Rooms & Suites</h2>
+        </div>
+        <div class="button">
+          <button class="btn1" onclick="window.location.href='https://www.oberoihotels.com/hotels-in-madina/rooms-suites/'">VIEW ALL</button>
+        </div>
+      </div>
+
+      <div class="content grid">
+        <a href="https://www.oberoihotels.com/hotels-in-madina/rooms-suites/our-standard-rooms/">
+          <div class="box">
+              <div class="img">
+                  <img src="./connect/assets/r1.jpg" alt="">
+              </div>
+              <div class="text">
+                  <h3>Our Standard Rooms</h3>
+                  <p> <span></span>23<span> square metres</span> </p>
+              </div>
+          </div>
+      </a>
+      <a href="https://www.oberoihotels.com/hotels-in-madina/rooms-suites/our-studio-rooms/">
+        <div class="box">
+          <div class="img">
+            <img src="./connect/assets/r2.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Our Studio Rooms</h3>
+            <p> <span></span>30<span> square metres</span> </p>
+          </div>
+        </div>
+        </a>
+        <a href="https://www.oberoihotels.com/hotels-in-madina/rooms-suites/our-family-rooms/">
+        <div class="box">
+          <div class="img">
+            <img src="./connect/assets/r3.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Our Family Rooms</h3>
+            <p> <span></span>60<span> square metres</span> </p>
+          </div>
+        </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <section class="wrapper wrapper2 top">
+     <div class="container">
+      <div class="text">
+        <div class="heading">
+          <h2>GIFTWRAPPED BY OBEROI</h2>
+        </div>
+
+        <div class="para">
+          <p>Gift nothing but the best with Giftwrapped by Oberoi. Whether it’s a weekend in the Himalayas, a meal by one of our award winning chefs or an authentic Balinese spa experience, the Giftwrapped by Oberoi Gift Card is the perfect way to express your love.
+
+            <p>Giftwrapped by Oberoi is valid for use at Oberoi Hotels in India only and can be purchased using Credit Cards / Debit Cards issued by banks in India. e-Gift Card will be delivered instantly to receiver’s email address shared at the time of purchase. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="restaurant top" id="restaurant">
+    <div class="container flex">
+      <div class="left">
+        <img src="./connect/assets/re.jpg" alt="">
+      </div>
+      <div class="right">
+        <div class="text">
+          <h1>Our Restaurant</h1><br>
+          <h3>Where would you like to dine?</h3>
+          <p>  Take your pick from the finest international and Arabic cuisines at our elegant restaurants.</p>
+        </div>
+        <div class="accordionWrapper">
+          <div class="accordionItem open">
+            <h2 class="accordionIHeading">Al Ansar</h2>
+            <div class="accordionItemContent">
+              <p>The best 24 hour international fine dining in Madina.
+
+                Our 24 hour dining space is decorated with Arabic designs, lit by traditional glass lights and adorned with faux date trees, Madina’s delicious dried fruit. We offer lavish hot and cold buffets of Arabic, Western and Indian cuisine for breakfast, lunch and dinner. These are complemented by fresh bread from the...
+                <br>
+                Timings 24 hours
+                <br>
+                Phone no +966 14 828 22 22
+              </p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">The Moghul Room.</h2>
+            <div class="accordionItemContent">
+              <p>Exquisite Indian cuisine beside breathtaking views.
+                Situated at the lobby level of The Oberoi, Madina, The Moghul Room is an elegant fine dining restaurant serving authentic, classical and contemporary North Indian cuisine. Let us show you to a table with breathtaking views of the piazza Al-Masjid An-Nabawi and its iconic shading umbrellas. Take a seat with your family...
+                <br>
+                Timings Lunch: 12.00 pm to 2.45 pm.
+                Dinner: 7.00 pm to 10.45 pm.
+                <br>
+                Phone no +966 14 828 22 22
+              </p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">Kyoto</h2>
+            <div class="accordionItemContent">
+              <p>Authentic Japanese food in the heart of Madina.
+
+                Kyoto is Madina’s first ever Japanese restaurant. It serves authentic cuisine at tables that overlook the Prophet’s Mosque. Our hand rolled sushi can also be enjoyed at the sushi counter, shabu shabu at a dedicated table and teppanyaki can be shared with family and friends in a private dining room attended...
+                <br>
+                Timings Lunch: 12.30 pm to 3.00 pm.
+                Dinner: 7.30 pm to 11.00 pm.
+                <br>
+                Phone no +966 14 828 22 22
+              </p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">The Tea House</h2>
+            <div class="accordionItemContent">
+              <p>An English style tea experience for leisurely afternoons.
+
+                This quaint space is furnished with crisp, white linen tables, just like an olde English tea shoppe. It features glass cases filled with fresh cakes and pastries, and is a wonderful setting to take a leisurely high tea with family and friends. We serve Arabic and European style coffees, and a range of herbal and black...
+                <br>
+                Timings 10.00 am to 11.00 pm.
+                <br>
+                Phone no +966 14 828 22 22
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    var accItem = document.getElementsByClassName('accordionItem');
+    var accHD = document.getElementsByClassName('accordionIHeading');
+
+    for (i = 0; i < accHD.length; i++) {
+      accHD[i].addEventListener('click', toggleItem, false);
+    }
+
+    function toggleItem() {
+      var itemClass = this.parentNode.className;
+      for (var i = 0; i < accItem.length; i++) {
+        accItem[i].className = 'accordionItem close';
+      }
+      if (itemClass == 'accordionItem close') {
+        this.parentNode.className = 'accordionItem open';
+      }
+    }
+  </script>
+
+
+
+  <section class="gallary mtop " id="gallary">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+          <h5>WELCOME TO OUR PHOTO GALLERY</h5>
+          <h2>Photo Gallery of Our Hotel</h2>
+        </div>
+        <div class="button">
+          <button class="btn1" onclick="window.location.href='https://www.oberoihotels.com/hotels-in-delhi/gallery/'" >VIEW GALLERY</button>
+        </div>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="./connect/assets/g1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./connect/assets/g2.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./connect/assets/g3.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./connect/assets/g4.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./connect/assets/g5.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./connect/assets/g6.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./connect/assets/g7.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./connect/assets/g8.jpg" alt="">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+
+
+
+  <section class="map top">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.1157290432266!2d77.23708527495545!3d28.596304785725856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2e1f627bc0d%3A0x40c25df4a92d1404!2sThe%20Oberoi%2C%20New%20Delhi!5e0!3m2!1sen!2sin!4v1711137433410!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;">
+      allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+
+  <footer>
+    <div class="container grid top">
+      <div class="box">
+        <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/48/000000/external-hotel-hotel-services-and-city-elements-flatart-icons-flat-flatarticons-1.png" />
+        <p> Recognition.<br>
+          For which we thank our guests and our people.
+          <br>
+          Best Hotel Brand in the World
+          (Ranked 1st)
+          2022
+          Travel + Leisure World’s Best Awards
+          Best Hotel Brand for Service Excellence (Editor’s Choice)
+          (For two consecutive years)<br>
+          2023<br>
+          Travel + Leisure, India’s Best Awards</p>
+
+        <p>Accepted payment methods</p>
+        <div class="payment grid">
+          <img src="https://img.icons8.com/color/48/000000/visa.png" />
+          <img src="https://img.icons8.com/color/48/000000/mastercard.png" />
+          <img src="https://img.icons8.com/color-glass/48/000000/paypal.png" />
+          <img src="https://img.icons8.com/fluency/48/000000/amex.png" />
+        </div>
+      </div>
+
+      <div class="box">
+        <h3>About Us</h3>
+        <ul>
+          <li><a href="https://www.oberoihotels.com/about-us/">Our Story</a></li>
+          <li><a href="https://www.oberoihotels.com/awards/">Awards</a></li>
+          <li><a href="https://www.oberoigroup.com/">Careers</a></li>
+          <li><a href="https://www.oberoigroup.com/learning-programmes/learning-program-lp">Oberoi Centre of Learning and Development</a></li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>News</h3>
+        <ul>
+          <li><a href="https://www.oberoihotels.com/media-press-releases/">Press Room</a></li>
+          <li><a href="https://www.oberoihotels.com/in-the-news/">News and Media</a></li>
+          <li><a href="https://www.oberoihotels.com/magazines/">The Oberoi Magazine</a></li>
+          <li><a href="https://www.oberoihotels.com/aviation/">Oberoi Aviation</a></li>
+          <li><a href="https://www.oberoihotels.com/oberoi-connections/">Oberoi Connections</a></li>
+        </ul>
+      </div>
+
+      <section class="contact " id="contact">
+      <div class="box">
+        <h3>Contact Us</h3>
+
+        <ul>
+          <li>Reservation +966-69110606</li>
+          <li><i class="far fa-envelope"></i> generalmanager.madina@oberoihotels.com</li>
+          <li><i class="far fa-phone-alt"></i> +966 14 828 22 22 </li>
+          <li><i class="far fa-phone-alt"></i> +966 14 828 20 20 </li>
+          <li><i class="far fa-comments"></i> reservations@oberoigroup.com</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  </footer>
+
+</body>
+
+</html>
