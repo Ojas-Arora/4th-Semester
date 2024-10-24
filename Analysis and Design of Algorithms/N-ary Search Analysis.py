@@ -1,4 +1,4 @@
-# N ary search Analysis
+# N ary search
 import random
 import time
 import csv
