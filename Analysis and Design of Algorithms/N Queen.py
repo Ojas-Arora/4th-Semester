@@ -1,4 +1,4 @@
-#N-Queen
+#N-Queen Problem
 from tabulate import tabulate
 def print_ans(r):
     n = len(r)
