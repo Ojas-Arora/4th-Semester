@@ -1,4 +1,4 @@
-#Multistage Graph(Forward)
+#Multistage Graph(Forward Approach)
 import matplotlib.pyplot as plt
 import networkx as nx
 def forward_approach(graph, n):
