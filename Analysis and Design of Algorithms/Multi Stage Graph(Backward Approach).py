@@ -1,4 +1,4 @@
-#MultiStage Graph(Backward)
+#MultiStage Graph(Backward Approach)
 import matplotlib.pyplot as plt
 import networkx as nx
 
