@@ -1,4 +1,4 @@
-#Merge Sort
+#Merge Sort in Python
 import matplotlib.pyplot as plt
 import numpy as np
 
