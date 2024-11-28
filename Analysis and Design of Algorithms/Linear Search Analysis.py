@@ -1,4 +1,4 @@
-#Linear Search Analysis
+#Linear Search Analysis in python
 import random
 import time
 import numpy as np
