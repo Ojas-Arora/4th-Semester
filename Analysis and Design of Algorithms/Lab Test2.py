@@ -1,3 +1,4 @@
+#Lab
 def min_pencils_needed(ranks):
     if not ranks:
         return 0   
