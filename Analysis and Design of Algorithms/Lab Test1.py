@@ -1,3 +1,4 @@
+#Lab 
 def q(n,arr)->bool:
     d={}
     d_arr=[]
