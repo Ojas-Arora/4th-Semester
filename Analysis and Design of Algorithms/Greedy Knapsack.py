@@ -1,3 +1,4 @@
+#Greedy Knapsack
 class Item:
     def __init__(self, profit, weight, num):
         self.profit = profit
