@@ -1,4 +1,4 @@
-#Quick Sort
+#Quick Sort in Python
 import matplotlib.pyplot as plt
 import numpy as np
 import time
